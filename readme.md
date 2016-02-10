@@ -8,6 +8,6 @@ When he is not kneeling on the neck of brand offenders, he dishes out helpful ad
 
 Clone the repo.
 
-`  node app.js
+```  node app.js
 
 That's it!
