@@ -68,6 +68,9 @@ function slack(){
 		    if(message.text.indexOf('pebble code')>-1){
 		    	channel.send('CONTROL, WE HAVE A CODE 623 VIOLATION. ABSENCE OF CURLY BRACES.');
 		    }
+		    if(message.text.indexOf('pebblecode')>-1){
+		    	channel.send('CONTROL, WE HAVE A CODE 361 VIOLATION. COMPANY NAME IS TWO WORDS WITH CURLY BRACES AROUND CODE.');
+		    }
 		    if(message.text.indexOf('pebble{code}')>-1){
 		    	channel.send('CONTROL, WE HAVE A CODE 416 VIOLATION. LACK OF SPACE BETWEEN PEBBLE AND THE FIRST CURLY BRACE.');
 		    }
