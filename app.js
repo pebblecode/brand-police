@@ -61,8 +61,17 @@ function slack(){
 				channel.send('*pebble purple*: RGB: 155, 092, 164, HEX: #9B5CA4, HSL: 293, 28, 50 ​');
 				channel.send('*pebble orange*: RGB: 250, 173, 064, HEX: #FAAD40, HSL: 035, 95, 62');
 				channel.send('*pebble blue-grey*: RGB: 59, 82, 114, HEX: #3B5272, HSB: 214, 48, 44');
+		    }
 
+		    if(message.text.indexOf('pebble fonts')>-1){
+		    	channel.send('Brandon Grotesque (for headings)');
+		    	channel.send('Meta (for body text)');
+		    	channel.send('Fonts can be accessed here: https://drive.google.com/drive/u/0/folders/0B4mkyflO8zoEUFZSV2VKQ29WNjg');
+		    }
 
+		    if(message.text.indexOf('pebble logo')>-1){
+		    	channel.send('http://pebblecode.com/img/brand/pebble-logo.png');
+		    	channel.send('http://pebblecode.com/img/brand/pebble-square-logo.png');
 		    }
 
 		    if(message.text.indexOf('pebble code')>-1){
