@@ -77,7 +77,7 @@ function slack(){
 		   	if((message.text.indexOf('Pebble')>-1)|(message.text.indexOf('Pebble Code')>-1)|(message.text.indexOf('pebble Code')>-1)){
 		    	channel.send('CONTROL, WE HAVE A CODE 935 VIOLATION. INCORRECT CAPITALISATION OF COMPANY NAME.');
 		    }
-		   	if((message.text.indexOf('[code]')>-1)|(message.text.indexOf('(code)')>-1)|(message.text.indexOf('pebble <code>')>-1)){
+		   	if((message.text.indexOf('[code]')>-1)|(message.text.indexOf('(code)')>-1)|(message.text.indexOf('<code>')>-1)){
 		    	channel.send('CONTROL, WE HAVE A CODE 147 VIOLATION. INCORRECT TYPE OF BRACKETS.');
 		    }
 		    if(message.text.indexOf('pebble.code')>-1){
