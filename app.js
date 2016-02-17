@@ -94,7 +94,20 @@ function slack(){
 		    }
 		   	if((message.text.indexOf('nom')>-1)|(message.text.indexOf('Nom')>-1)){
 		    	channel.send('GET IN THE VAN');
-		    }	    	
+		    }	 
+		   	if((message.text.indexOf('folks')>-1)|(message.text.indexOf('folk')>-1)){
+		   		var select =  Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+		   		if (select === 1){
+		   			channel.send('PEOPLE');	
+		   		}
+		   		if (select === 2){
+		   			channel.send('I LOVE IT WHEN PEOPLE TALK LIKE GEORGE W BUSH');	
+		   		}
+		   		if (select === 3){
+		   			channel.send('FOLK OFF');	
+		   		}
+
+		    }	    	   	
 	    }
 
 
