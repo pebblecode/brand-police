@@ -108,7 +108,7 @@ function slack(){
 		   		}
 
 		    }
-		    if((message.text.indexOf('@brand-police')>-1)){
+		    if((message.text.indexOf('<@U0LQGL35E>')>-1)){
 		   		var select =  Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 		   		if (select === 1){
 		   			channel.send("DEAD OR ALIVE, YOU'RE COMING WITH ME");	
