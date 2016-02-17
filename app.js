@@ -107,6 +107,21 @@ function slack(){
 		   			channel.send('FOLK OFF');	
 		   		}
 
+		    }
+		    if((message.text.indexOf('@brand-police')>-1)){
+		   		var select =  Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+		   		if (select === 1){
+		   			channel.send("DEAD OR ALIVE, YOU'RE COMING WITH ME");	
+		   		}
+		   		if (select === 2){
+		   			channel.send('EXCUSE ME, I HAVE TO GO. SOMEWHERE THERE IS A CRIME HAPPENING');	
+		   		}
+		   		if (select === 3){
+		   			channel.send('MY PRIME DIRECTIVES ARE:');	
+		   			channel.send('ENFORCE THE BRAND LAW');
+		   			channel.send('SMASH DISSENT');
+		   			channel.send('RESCUE KITTENS FROM TREES');
+		   		}
 		    }	    	   	
 	    }
 
